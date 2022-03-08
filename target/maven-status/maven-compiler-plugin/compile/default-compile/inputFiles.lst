@@ -1,2 +1,15 @@
-/home/antoine/ENSTA2021/Projet2/src/main/java/com/ensta/librarymanager/persistence/ConnectionManager.java
-/home/antoine/ENSTA2021/Projet2/src/main/java/com/ensta/librarymanager/utils/FillDatabase.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/dao/LivreDaoImpl.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/persistence/ConnectionManager.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/modele/Livre.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/test/DaoTest.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/dao/MembreDaoImpl.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/dao/EmpruntDao.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/dao/MembreDao.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/exception/DaoException.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/modele/Membre.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/dao/LivreDao.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/modele/Emprunt.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/dao/EmpruntDaoImpl.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/modele/Abonnement.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/utils/FillDatabase.java
+/Users/kazem/Desktop/IN205/IN205-Library-Manager/src/main/java/com/ensta/librarymanager/test/ModeleTest.java
