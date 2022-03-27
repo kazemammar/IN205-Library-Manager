@@ -1,4 +1,0 @@
-0:0:0:0:0:0:0:1 - - [08/Mar/2022:10:44:58 +0100] "GET /TP3Ensta/dashboard HTTP/1.1" 404 987 http-bio-8080-exec-1 38
-0:0:0:0:0:0:0:1 - - [08/Mar/2022:10:45:06 +0100] "GET /TP3Ensta/dashboard HTTP/1.1" 404 987 http-bio-8080-exec-2 1
-0:0:0:0:0:0:0:1 - - [08/Mar/2022:10:45:15 +0100] "GET /TP3Ensta/dashboard HTTP/1.1" 404 987 http-bio-8080-exec-3 1
-0:0:0:0:0:0:0:1 - - [08/Mar/2022:10:45:20 +0100] "GET /TP3Ensta/dashboard HTTP/1.1" 404 987 http-bio-8080-exec-4 1
