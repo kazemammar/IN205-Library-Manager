@@ -23,7 +23,7 @@
         <div class="col l4 s6">
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>12</h3> <!-- TODO : afficher le nombre de membres à la place de 12 -->
+              <h3>${nbMembres}</h3>
               <p>Membres</p>
             </div>
             <div class="icon">
@@ -35,7 +35,7 @@
         <div class="col l4 s6">
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>27</h3> <!-- TODO : afficher le nombre de livres à la place de 27 -->
+              <h3>${nbLivres}</h3> 
               <p>Livres</p>
             </div>
             <div class="icon">
@@ -47,7 +47,7 @@
         <div class="col l4 s6">
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>1515</h3> <!-- TODO : afficher le nombre d'emprunts à la place de 1515 -->
+              <h3>${nbEmprunts}</h3>
               <p>Emprunts</p>
             </div>
             <div class="icon">
@@ -69,17 +69,19 @@
                     </tr>
                 </thead>
                 <tbody id="results">
-                
-                    <tr>
-                        <td>Titre du livre, <em>de Nom de l'auteur</em></td>
-                        <td>Prénom et nom du membre emprunteur</td>
-                        <td>Date de l'emprunt</td>
-                        <td>
-                            <a href="emprunt_return?id=idDeLEmprunt"><ion-icon class="table-item" name="log-in"></a>
-                        </td>
-                    </tr>
+                    <c:if test="${!empruntsCourant.isEmpty()}">
+                      <c:forEach items="${empruntsCourant}" var="emprunt">
+                        <tr>
+                          <td>${emprunt.getLivre().getTitre()}, <em>${emprunt.getLivre().getAuteur()}</em></td>
+                          <td>${emprunt.getMembre().getPrenom()} ${emprunt.getMembre().getNom()}</td>
+                          <td>${emprunt.getDateEmprunt()}</td>
+                          <td>
+                            <a href="emprunt_return?id=${emprunt.getId()}"><ion-icon class="table-item" name="log-in"></a>
+                          </td>
+                        </tr>
+                      </c:forEach>
+                    </c:if>
                     
-                     <!-- TODO : parcourir la liste des emprunts en cours et les afficher selon la structure d'exemple ci-dessus -->
                 </tbody>
             </table>
           </div>

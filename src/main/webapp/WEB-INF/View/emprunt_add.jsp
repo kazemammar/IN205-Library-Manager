@@ -21,22 +21,30 @@
       </div>
       <div class="row">
       <div class="container">
-        <h5>Sélectionnez le livre et le membre emprunteur</h5>
+        <h5>SÃ©lectionnez le livre et le membre emprunteur</h5>
         <div class="row">
-	      <form action="/LibraryManager/emprunt_add" method="post" class="col s12">
+	      <form action="/TP3Ensta/emprunt_add" method="post" class="col s12">
 	        <div class="row">
 	          <div class="input-field col s6">
 	            <select id="idLivre" name="idLivre" class="browser-default">
-	              <option value="" disabled selected>-- Livres --</option>
-	              <!-- TODO : parcourir la liste des livres disponibles et afficher autant d'options que nécessaire, sur la base de l'exemple ci-dessous -->
-                  <option value="idDuLivre">"Titre du livre", de Nom de l'auteur</option>
+                <option value="" disabled selected>-- Livres --</option>
+                <c:if test="${!livres.isEmpty()}">
+                  <c:forEach items="${livres}" var="livre">
+                    <option value="${livre.getId()}"> "${livre.getTitre()}", ${livre.getAuteur()}</option>
+                  </c:forEach>
+                </c:if>
+	                <option value="idDuLivre">"Titre du livre", de Nom de l'auteur</option>
 	            </select>
 	          </div>
 	          <div class="input-field col s6">
 	            <select id="idMembre" name="idMembre" class="browser-default">
-	              <option value="" disabled selected>-- Membres --</option>
-	              <!-- TODO : parcourir la liste des membres pouvant emprunter et afficher autant d'options que nécessaire, sur la base de l'exemple ci-dessous -->
-                  <option value="idDuMembre">Prénom et nom du membre</option>
+                <option value="" disabled selected>-- Membres --</option>
+                <c:if test="${!membres.isEmpty()}">
+                  <c:forEach items="${membres}" var="membre">
+                    <option value="${membre.getId()}"> ${membre.getPrenom()} ${membre.getNom()}</option>
+                  </c:forEach>
+                </c:if>
+	                <option value="idDuMembre">PrÃ©nom et nom du membre</option>
 	            </select>
 	          </div>
 	        </div>
